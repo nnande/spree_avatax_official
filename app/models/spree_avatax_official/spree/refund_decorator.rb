@@ -19,4 +19,4 @@ module SpreeAvataxOfficial
   end
 end
 
-::Spree::Refund.prepend ::SpreeAvataxOfficial::Spree::RefundDecorator
+::Spree::Refund.prepend ::SpreeAvataxOfficial::Spree::RefundDecorator if defined?(Spree::Refund)
